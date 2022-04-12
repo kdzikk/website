@@ -82,7 +82,7 @@ header {
 
 header .main-img {
   position: relative;
-  background-image: url("images/photos/przerobione/background.jpg");
+  background-image: url("https://kdzikk.github.io/images/photos/przerobione/background.jpg");
   height: 95vh;
   width: 100%;
   background-position: center;
