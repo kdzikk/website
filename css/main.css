@@ -53,6 +53,65 @@ h2 {
   font-size: 1.1rem;
 }
 
+.to-the-top {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 2%;
+  right: 4%;
+  z-index: 10;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #3a3a3a;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.to-the-top i {
+  color: white;
+  font-size: 20px;
+}
+
+.btnEntrance {
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: btnEntrance;
+          animation-name: btnEntrance;
+}
+
+@-webkit-keyframes btnEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 nav {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 3;
@@ -82,7 +141,7 @@ header {
 
 header .main-img {
   position: relative;
-  background-image: url("https://kdzikk.github.io/test/background.jpg");
+  background-image: url("../images/photos/przerobione/background.jpg");
   height: 95vh;
   width: 100%;
   background-position: center;
@@ -260,6 +319,12 @@ header .bounce-top {
   font-size: 1.1rem;
   margin: 20px;
   cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.contact .container .contact-box i:hover {
+  color: var(--fonthovercolor);
 }
 
 .footer {
@@ -300,6 +365,17 @@ header .bounce-top {
 }
 
 @media (min-width: 768px) {
+  .to-the-top {
+    display: none;
+    bottom: 2%;
+    right: 4%;
+    height: 60px;
+    width: 60px;
+  }
+  .to-the-top i {
+    color: white;
+    font-size: 30px;
+  }
   .navbar .container {
     padding: 10px 0;
   }
