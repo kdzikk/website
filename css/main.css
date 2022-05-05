@@ -17,6 +17,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   scroll-padding-top: 15px;
 }
 
@@ -55,9 +56,6 @@ h2 {
 
 .to-the-top {
   display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -72,8 +70,6 @@ h2 {
   border-radius: 50%;
   background-color: #3a3a3a;
   text-decoration: none;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
 }
 
 .to-the-top i {
@@ -195,24 +191,21 @@ header .main-text .centerp {
 }
 
 header .main-text a {
-  padding: 5px 15px;
+  padding: 5px 10px;
   margin-top: 25px;
   color: var(--fontcolor);
-  background-color: #1d1c1c;
-  border: 1px solid #a1a1a1;
+  background-color: #1b1b1b;
+  border: 1px solid #7e7e7e;
   border-radius: 2px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: normal;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
 }
 
 header .main-text a:hover {
   color: white;
-  background-color: #363636;
 }
 
 header .arrow {
@@ -366,7 +359,6 @@ header .bounce-top {
 
 @media (min-width: 768px) {
   .to-the-top {
-    display: none;
     bottom: 2%;
     right: 4%;
     height: 60px;
@@ -391,11 +383,11 @@ header .bounce-top {
     margin-left: 15px;
   }
   header .main-text a {
-    padding: 5px 25px;
+    padding: 5px 15px;
     margin-top: 35px;
-    border: 2px solid #a1a1a1;
+    border: 1.5px solid #a1a1a1;
     border-radius: 4px;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   header .arrow {
     font-size: 2.3rem;
