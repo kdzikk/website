@@ -1,1 +1,1 @@
-https://kdzikk.github.io/test/
+https://kdzikk.github.io/website/
